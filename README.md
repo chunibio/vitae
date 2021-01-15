@@ -16,6 +16,11 @@ struct Person {
     hobbies: Vec<Hobby>
 }
 
+trait Student {
+    fn get_cources();
+    fn get_gpa();
+}
+
 struct PersonalInfo {
     first_name: String,
     last_name: String,
