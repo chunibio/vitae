@@ -63,7 +63,7 @@ enum Education {
     OnlineCourse
 }
 
-strcut University {
+struct University {
     name: String,
     gpa: Option<?>
 }
