@@ -52,15 +52,22 @@ enum WebsiteType {
     OtherWeb(String)
 }
 
-struct Education {
-    title: String,
-    courses: Vec<Course>
+enum Education {
+    HighSchool,
+    University,
+    OnlineCourse
+}
+
+strcut University {
+    name: String,
+    gpa: Option<?>
 }
 
 struct Course {
     id: String,
     title: String,
     full_title: Option<String>,
+    grade: Option <?>,
     projects: Vec<Projects>
 }
 
