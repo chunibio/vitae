@@ -1,5 +1,21 @@
 # vitae
-Resume manager with experience tracking and resume generation
+Plan cources, track experience, build resume.
+
+```shell
+> vitae
+Plan cources, track experience, build resume.
+
+> vitae hobby
+------------------------------------------------
+Title           | Description
+------------------------------------------------
+Snowboarding    | ...
+Knifes          | ...
+Other           | ...
+
+> vita
+```
+
 
 ```rust
 extern crate phonenumber;
@@ -11,6 +27,7 @@ use url::{Url, ParseError};
 struct Person {
     personal_info: PersonalInfo,
     contact_info: ContactInfo,
+    education: Vec<Education>,
     skills: Vec<Skill>,
     experience: Vec<Experience>,
     hobbies: Vec<Hobby>
@@ -49,6 +66,7 @@ struct Website {
 
 enum WebsiteType {
     Personal,
+    Portfolio,
     LinkedIn,
     GitHub,
     GitLab,
