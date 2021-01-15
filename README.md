@@ -71,7 +71,8 @@ struct Project {
 struct Skill {
     title: String,
     description: String,
-    type: SkillType
+    type: SkillType,
+    level: SkillLevel
 }
 
 enum SkillType {
@@ -79,9 +80,15 @@ enum SkillType {
     OtherSkill(String)
 }
 
+enum SkillLevel {
+    TechnicalSkill,
+    OtherSkill(String)
+}
+
 struct Hobby {
     title: String,  // shoul be limited to N symbols
-    description: String
+    description: String,
+    priority: HobbyPriority
 }
 
 ```
