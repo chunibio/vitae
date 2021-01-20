@@ -122,3 +122,10 @@ struct Hobby {
 }
 
 ```
+
+
+### Resources
+- https://crates.io/crates/qcv
+- https://crates.io/crates/resufancy
+- https://crates.io/search?q=Vitae
+- https://app.standardresume.co/resumes/LwXFx3LjmoJckZ3td7f9i/write
